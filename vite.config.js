@@ -17,7 +17,7 @@ export default defineConfig({
 				drinkdes: path.resolve(dirname, "drinkdessert.html"),
 				moodboard: path.resolve(dirname, "moodboard.html"),
 				quizzes: path.resolve(dirname, "quizzeshomepage.html"),
-				recipe: path.resolve(dirname, "recipecards.html"),
+				recipe: path.resolve(dirname, "recipeCards.html"),
 				thanks: path.resolve(dirname, "thankyou.html"),
 			},
 		},
