@@ -10,7 +10,6 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: path.resolve(dirname, "index.html"),
-				newRecipe: path.resolve(dirname, "recipes/new/index.html"),
 			},
 		},
 	},
