@@ -1,6 +1,6 @@
 import path from "node:path";
 import url from "node:url";
-import { defineConfig, ModuleNode } from "vite";
+import { defineConfig } from "vite";
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
