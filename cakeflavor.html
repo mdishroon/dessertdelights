@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Flavor of Cake Are You?</title>
+    <link rel="stylesheet" href="dd.styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dessert Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipeCards.html">Recipes</a></li>
+                <li><a href="#moodboard">Moodboard</a></li>
+                <li><a href="quizzeshomepage.html">Quizzes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <h1>What Flavor of Cake Are You?</h1>
+        <p>Answer these questions to find your cake personality!</p>
+
+        <div id="cakeQuiz">
+
+            <div class="question" data-question="q1">
+                <p>1. What’s your ideal weekend activity?</p>
+                <div class="quiz-options">
+                    <button class="cake-choice" data-type="chocolateCake">Watching movies / TV shows</button>
+                    <button class="cake-choice" data-type="vanillaCake">Reading a book</button>
+                    <button class="cake-choice" data-type="redVelvetCake">Going out with friends</button>
+                    <button class="cake-choice" data-type="lemonCake">Trying a new hobby</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q2">
+                <p>2. What’s your go-to dessert?</p>
+                <div class="quiz-options">
+                    <button class="cake-choice" data-type="chocolateCake">Brownies</button>
+                    <button class="cake-choice" data-type="vanillaCake">Ice Cream</button>
+                    <button class="cake-choice" data-type="redVelvetCake">Cupcakes</button>
+                    <button class="cake-choice" data-type="lemonCake">Fruit Tart</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q3">
+                <p>3. How would your friends describe you?</p>
+                <div class="quiz-options">
+                    <button class="cake-choice" data-type="chocolateCake">Relaxed and calm</button>
+                    <button class="cake-choice" data-type="vanillaCake">Kind and dependable</button>
+                    <button class="cake-choice" data-type="redVelvetCake">Bold and confident</button>
+                    <button class="cake-choice" data-type="lemonCake">Energetic and fun</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q4">
+                <p>4. What’s your ideal vacation?</p>
+                <div class="quiz-options">
+                    <button class="cake-choice" data-type="chocolateCake">A cabin in the mountains</button>
+                    <button class="cake-choice" data-type="vanillaCake">A quiet beach trip</button>
+                    <button class="cake-choice" data-type="redVelvetCake">A trip to a big city</button>
+                    <button class="cake-choice" data-type="lemonCake">An outdoor adventure</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q5">
+                <p>5. Pick a color palette:</p>
+                <div class="quiz-options">
+                    <button class="cake-choice" data-type="chocolateCake">Dark tones</button>
+                    <button class="cake-choice" data-type="vanillaCake">Soft pastel shades</button>
+                    <button class="cake-choice" data-type="redVelvetCake">Bold and deep colors</button>
+                    <button class="cake-choice" data-type="lemonCake">Bright and cheerful hues</button>
+                </div>
+            </div>
+
+            <button id="cakeSubmit">Find My Cake Flavor</button>
+
+            <div id="cakeResult">
+                <h2>Your Cake Personality:</h2>
+                <p id="cakeType"></p>
+                <p id="cakeDescription"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="cakeflavor.js"></script>
+
+    <section class="quiz-links">
+        <h2>Take Another Quiz!</h2>
+        <a href="chocolatedessert.html" class="quiz-button">What Chocolate Dessert Are You?</a>
+        <a href="drinkdessert.html" class="quiz-button">What Dessert Pairs Best With Your Favorite Drink?</a>
+    </section>
+
+</body>
+</html>

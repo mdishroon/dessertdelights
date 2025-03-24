@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Delights Recipe Cards 🍰</title>
+    <link rel="stylesheet" href="dd.styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dessert Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipeCards.html">Recipes</a></li>
+                <li><a href="#moodboard">Moodboard</a></li>
+                <li><a href="quizzeshomepage.html">Quizzes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="add-recipe-button" class="submit-button">Add New Recipe</button>
+    <script>
+        document.getElementById("add-recipe-button").addEventListener("click", function() {
+          window.location.href = "addRecipe.html";
+        });
+      </script>
+      
+    <h2 class="page-title">Delightful Dessert Recipe Cards</h2>
+    <input type="text" id="SearchBar" onkeyup="findRecipe()" placeholder="Search for your favorite dessert..." class="search-bar">
+    <div class="recipe-holder">
+        <div class = "row">
+        <!-- recipe card 1 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Chocolate Strawberry Cake Rolls</center></h2>
+                    <img src="images/cakeroll.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>3/4 cups of flour</li>
+                        <li>3 large eggs</li>
+                        <li>1/3 teaspoon vanilla</li>
+                        <li>1/3 cup of milk</li>
+                        <li>1/4 cup cocoa powder</li>
+                        <li>1/4 salt</li>
+                        <li>1 teaspoon of baking powder</li>
+                        <li>1 cup of strawberries</li>
+
+
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat oven to 350 degrees Fahrenheit.</li>
+                        <li>For the cake roll, beat the eggs and sugar until light and fluffy in a mixing bowl.</li>
+                        <li>Pour in the flour, cocoa powder, baking powder, and salt into the egg mixture slowly.</li>
+                        <li>Bake for 10-12 minutes.</li>
+                        <li>Let it cool completely.</li>
+                        <li>For the filling, whip the heavy cream, powder sugar, and vanilla extract until a stiff peak forms.</li>
+                        <li>Add the strawberries into the filling batter and mix.</li>
+                        <li>Spread the filling and roll the cake.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 2 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Chocolate Raspberry Mousse Cake</center></h2>
+                    <img src="images/moussecake.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup sugar</li>
+                        <li>3/4 cup purpose flour</li>
+                        <li>3/4 cup unsweetened cocoa powder</li>
+                        <li>1 1/2 teaspoons baking powder</li>
+                        <li>1 1/2 teaspoons baking soda</li>
+                        <li>1 teaspoon salt</li>
+                        <li>2 large eggs</li>
+                        <li>1 cup of whole milk</li>
+                        <li>1/2 cup of vegetable oil</li>
+                        <li>2 teaspoons vanilla extract</li>
+                        <li>1 cup of boiling water</li>
+                        <li>1 cup heavy whipping cream</li>
+                        <li>8 ounces cream cheese, softened</li>
+                        <li>1/2 cup raspberry jam</li>
+                        <li>1 cup fresh raspberries</li>
+                        <li>8 ounces dark chocolate, chopped</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat your oven to 350 degrees Fahrenheit.</li>
+                        <li>Mix sugar, flour, cocoa powder, baking powder, baking soda, and salt in a bowl.</li>
+                        <li>Mix and add eggs, milk, vegetable oil, and vanilla extract into the batter.</li>
+                        <li>Bake for 30-35 minutes. Let the cake cool for 10 minutes.</li>
+                        <li>In a bowl, whip the heavy cream and sugar until a peak form.</li>
+                        <li>Beat the cream cheese until smooth and add the raspberry jam. Mix them both together.</li>
+                        <li>To make the ganache, heat the heavy cream and pour the dark chocolate. Let the ganache sit for 5 minutes.</li>
+                        <li>Spread the chocolate ganache and add some fresh raspberries on top of the cake.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 3 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>S'mores Donuts</center></h2>
+                    <img src="images/donut.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>3 cup of flour</li>
+                        <li>1/4 cup of sugar</li>
+                        <li>1/4 cup of water</li>
+                        <li>2 1/4 teaspoon of active yeast</li>
+                        <li>3/4 cup of milk</li>
+                        <li>1 large egg</li>
+                        <li>3 tablespoons of melted butter</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>1/2 salt</li>
+                        <li>Graham crackers</li>
+                        <li>Chocolate chips</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a bowl, mix the flour, sugar, salt, water, and yeast. Let it sit for a while till it is foamy.</li>
+                        <li>Add the milk, egg, melted butter, and vanilla extract, and mix till the dough is formed.</li>
+                        <li>Knead the dough on a floured surface until smooth and elastic. place it in a greased bowl.</li>
+                        <li>Punch the dough and roll it up to a doughnut shape. Fry until it is golden brown.</li>
+                        <li>Once it is cooled, spread a layer of marshmallow creme on each doughnut</li>
+                        <li>Top it with graham cracker crumbs and chocolate chips.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <!-- recipe card 4 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Salted Caramel Chocolate Cupcakes</center></h2>
+                    <img src="images/caramelcupcake.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>3/4 cup flour</li>
+                        <li>1/3 Unsweetened cocoa powder</li>
+                        <li>1/2 teaspoon of baking powder</li>
+                        <li>1/2 teaspoon of baking soda</li>
+                        <li>1/2 salt</li>
+                        <li>2 tablespoons of unsalted butter, softened</li>
+                        <li>3/4 sugar</li>
+                        <li>2 eggs</li>
+                        <li>1 teaspoon Vanilla extract</li>
+                        <li>3/4 cup of hot coffee</li>
+                        <li>3 ounces bittersweet chocolate, chopped</li>
+                        <li>1 cup salted caramel sauce</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat your oven to 350 degrees Fahrenheit</li>
+                        <li>Whisk together flour, cocoa powder, baking powder, baking soda, and salt in a bowl.</li>
+                        <li>Mix the butter and sugar until light and fluffy. Beat the eggs one at a time, then add the vanilla.</li>
+                        <li>Combine dry ingredients and hot coffee with the wet ingredients and mix well.</li>
+                        <li>Add some chocolate to the batter.</li>
+                        <li>Divide the chocolate batter evenly amount the cupcake tray, about 2/3 full.</li>
+                        <li>Bake for 18-22 minutes.</li>
+                        <li>Frost with salted caramel sauce.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 5 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Chocolate Cream & Cherries Tiramisu</center></h2>
+                    <img src="images/tiramisu.PNG" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 1/4 mascarpone</li>
+                        <li>3 eggs</li>
+                        <li>2 3/4 heavy Cream</li>
+                        <li>1 1/4 sugar</li>
+                        <li>1 cup of coffee</li>
+                        <li>2 packs of ladyfingers</li>
+                        <li>1 teaspoon cocoa powder</li>
+                        <li>2 spoons of cherries preserve</li>
+                        <li>1/2 teaspoon salt</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Whisk the mascarpone and sugar until it is smooth.</li>
+                        <li>Whip the heavy cream until it forms a peak.</li>
+                        <li>Gently fold the whipped cream into the mascarpone mixture.</li>
+                        <li>Layer the ladyfingers with the mascarpone cream, cherry preserves, cocoa powder, and chocolate.</li>
+                        <li>Repeat the layers, finishing with a final layer of cocoa powder and chocolate.</li>
+                        <li>Chill in the refrigerator for at least 8 hours</li>
+                        <li>Slice and serve.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 6 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Raspberry Macarons</center></h2>
+                    <img src="images/macarons.PNG" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 1/4 cup of almond flour</li>
+                        <li>3/4 cup powdered sugar</li>
+                        <li>3 egg whites</li>
+                        <li>1/4 teaspoon cream of tarter</li>
+                        <li>1/3 cup of sugar</li>
+                        <li>1 drop of red/pink food coloring</li>
+                        <li>A pinch of cream of tartar</li>
+                        <li>1/4 cup of raspberry jam for filling</li>
+                        <li>6 ounces of fresh raspberries</li>
+                        <li>1 tablespoon lemon juice</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat your oven to 350 degrees Fahrenheit.</li>
+                        <li>Sift the almond flour and powdered sugar in a bowl.</li>
+                        <li>Beat the egg white until it is frothy. Add sugar and a pinch of cream of tartar. Beat until a peak is formed.</li>
+                        <li>Fold in the almond flour mixture and a few drops of red/pink food coloring.</li>
+                        <li>Pipe small circles onto the baking sheet. Tap sheet to release air bubbles.</li>
+                        <li>Let it sit for 30-60 minutes until the skin is formed.</li>
+                        <li>Bake for 15-20 minutes at 300 degrees Fahrenheit</li>
+                        <li>Add the raspberry jam for filling.</li>
+                        <li>Add some fresh raspberries on top.</li>
+                        <li>Refrigerate for 24 hours.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <!-- recipe card 7 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Chocolate Lava Cake</center></h2>
+                    <img src="images/lavacake.png" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>4 oz bittersweet chocolate, finely chopped</li>
+                        <li>1/2 cup unsalted butter, cut into pieces</li>
+                        <li>1/4 cup all-purpose flour</li>
+                        <li>1/2 cup powdered sugar</li>
+                        <li>1/8 tsp salt</li>
+                        <li>2 large eggs</li>
+                        <li>2 egg yolks</li>
+                        <li>1/2 tsp vanilla extract </li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat oven to 425 Fahrenheit (220 Celsius). Grease and flour four 6-ounce ramekins.</li>
+                        <li>In a bowl, melt chocolate and butter over a double boiler or microwave in 20 second, stirring until smooth.</li>
+                        <li>In a separate bowl, whisk together flour, powdered sugar, and salt.</li>
+                        <li>In another bowl, beat eggs, egg yolks, and vanilla extract until light and fluffy.</li>
+                        <li>Gradually mix the melted chocolate into the egg mixture, then fold in the dry ingredients until just combined.</li>
+                        <li>Divide batter evenly into the prepared ramekins and place on a baking sheet.</li>
+                        <li>Bake for 12-14 minutes, until the edges are firm, but the center is slightly soft.</li>
+                        <li>Let cool for 1-2 minutes, then run a knife around the edges and serve onto plates. Serve immediately.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 8 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>No-Bake Cheesecake</center></h2>
+                    <img src="images/nobakecheese.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 cups graham cracker crumbs</li>
+                        <li>1/2 cup melted butter</li>
+                        <li>1/4 cup sugar</li>
+                        <li>16 oz cream cheese, softened</li>
+                        <li>1 cup powdered sugar</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>1 cup heavy whipping cream, chilled</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a bowl, mix graham cracker crumbs, melted butter, and sugar. Press firmly into a 9 inch pan.</li>
+                        <li>In a bowl, beat cream cheese, powdered sugar, and vanilla extract until smooth and creamy.</li>
+                        <li>In a separate bowl, whip heavy cream until stiff peaks form, then gently fold into the cream cheese mixture.</li>
+                        <li>Spread the mixture evenly over the prepared crust.</li>
+                        <li>Cover and refrigerate for at least 4 hours, or overnight for best results.</li>
+                        <li>Before serving, top with fresh fruit, chocolate drizzle, or caramel sauce.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 9 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Classic Tiramisu</center></h2>
+                    <img src="images/classictiramisu.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup strong brewed coffee, cooled</li>
+                        <li>2 tablespoon coffee liqueur</li>
+                        <li>1/2 cup sugar</li>
+                        <li>8 oz mascarpone cheese, softened</li>
+                        <li>3/4 cup heavy whipping cream, chilled</li>
+                        <li>24 ladyfingers</li>
+                        <li>Cocoa powder for dusting</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Mix coffee and liqueur in a shallow dish and set aside.</li>
+                        <li>In a bowl, whisk egg yolks and sugar together, then place over a pot of simmering water, whisking until thickened. Remove from heat. </li>
+                        <li>Stir in mascarpone cheese until smooth.</li>
+                        <li>In a separate bowl, whip heavy cream until stiff peaks form, then gently fold into the mascarpone mixture.</li>
+                        <li>Quickly dip each ladyfinger into the coffee mixture and arrange in a single layer in a baking dish.</li>
+                        <li>Spread half of the mascarpone mixture over the ladyfingers and repeat the layers.</li>
+                        <li>Cover and refrigerate for at least 4 hours or overnight.</li>
+                        <li>Dust with cocoa powder before serving. </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <!-- recipe card 10 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Strawberry Shortcake</center></h2>
+                    <img src="images/strawberryshortcake.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 cups all purpose flour</li>
+                        <li>1/4 cup sugar</li>
+                        <li>1 tablespoon baking powder </li>
+                        <li>1/2 teaspoon salt </li>
+                        <li>1/2 cup cold butter, cubed</li>
+                        <li>2/3 cup milk</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>1 pound fresh strawberries, sliced</li>
+                        <li>1 cup heavy whipping cream, chilled </li>
+                        <li>1 tablespoon powdered sugar (for whipped cream)</li>
+
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat oven to 425 Fahrenheit (220 Celsius). Line a baking sheet with parchment paper.</li>
+                        <li>In a large bowl, whisk together flour, sugar, baking powder, and salt.</li>
+                        <li>Cut in cold butter using a pastry cutter or fork until the mixture resembles crumbs.</li>
+                        <li>Stir in milk and vanilla extract until combined and do not overmix.</li>
+                        <li>Drop dough onto the baking sheet in 6-8 rounds and bake for 12-15 minutes until golden brown.</li>
+                        <li>Toss sliced strawberries with sugar and let sit for 10 minutes.</li>
+                        <li>In a separate bowl, whip heavy cream and powdered sugar until soft peaks form.</li>
+                        <li>Slice shortcakes in half, layer with strawberries and whipped cream, and top with the other half.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 11 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Peanut Butter Cups</center></h2>
+                    <img src="images/peanutbuttercups.PNG" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup creamy peanut butter</li>
+                        <li>1/4 cup powdered sugar</li>
+                        <li>2 cups chocolate chips (milk or dark)</li>
+                        <li>2 tablespoons of butter </li>
+                        <li>1/2 teaspoon of vanilla extract </li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Line a mini muffin tin with paper liners.</li>
+                        <li>In a bowl, mix peanut butter, powdered sugar, and vanilla extract until smooth.</li>
+                        <li>Melt chocolate chips and butter together in a bowl over simmering water or in the microwave for 20 seconds, stirring frequently. </li>
+                        <li>Spoon a small amount of melted chocolate into each liner, then add a small dollop of the peanut butter mixture.</li>
+                        <li>Top with more melted chocolate and gently tap the tray to level the layers.</li>
+                        <li>Refrigerate for at least 1 hour until firm and serve.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 12 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>New Orleans-Style Beignets</center></h2>
+                    <img src="images/neworleans.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>4 cups all-purpose flour</li>
+                        <li>1 1/4 cup whole milk, warm</li>
+                        <li>2 teaspoons active dry yeast</li>
+                        <li>1/2 cup white sugar</li>
+                        <li>1 teaspoon salt</li>
+                        <li>2 large eggs</li>
+                        <li>Cocoa powder for dusting</li>
+                        <li>6 tablespoons unsalted butter, softened</li>
+                        <li>Vegetable oil, for frying</li>
+                        <li>1 cup powdered sugar, for dusting</li>
+                        
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a bowl, combine the warm milk and active dry yeast. Whisk until the yeast dissolves. Let it sit for 5-10 minutes until it becomes frothy.</li>
+                        <li>Add the sugar, salt, eggs, butter, and vanilla extract to the yeast mixture. Stir until well combined.</li>
+                        <li>Mix in the flour, stirring continuously until a soft, slightly sticky dough forms.</li>
+                        <li>Knead the dough for 3-4 minutes until smooth and elastic.</li>
+                        <li>Transfer the dough to a lightly greased bowl, cover with plastic wrap and a kitchen towel, and let it rise in a warm place for 1 hour.</li>
+                        <li>Roll the dough out into a large square about 1/2 inch thick. Using a pizza cutter, slice into 2.5 by 2.5 inch squares.</li>
+                        <li>In a fryer, heat vegetable oil to 350 Fahrenheit (175 Celsius).</li>
+                        <li>Carefully drop a few dough squares into the hot oil, making sure not to overcrowd the pot.</li>
+                        <li>Fry for 1-2 minutes per side, flipping once, until golden brown and serve.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class = "row">
+        <!-- recipe card 13 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Red Velvet Pizookies</center></h2>
+                    <img src="images/redvelvetpizookie.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 1/2 cups all-purpose flour</li>
+                        <li>1/4 cup cocoa powder</li>
+                        <li>1 teaspoon baking soda</li>
+                        <li>1/2 teaspoon salt </li>
+                        <li>2 tablespoons cornstarch</li>
+                        <li>1 1/2 sticks unsalted butter, melted (3/4 cup)</li>
+                        <li>3/4 cup white sugar</li>
+                        <li>1/2 cup light brown sugar</li>
+                        <li>1 large egg + 1 egg yolk</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>1/3 to 1/2 cup white chocolate chips</li>
+                        <li>1/3 cup semi-sweet chocolate, chopped</li>
+                        <li>1 tablespoon red food coloring</li>
+
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a small bowl, whisk together the flour, cocoa powder, baking soda, salt, and cornstarch.</li>
+                        <li>In a separate mixing bowl, combine the melted butter, white sugar, brown sugar, egg, egg yolk, and vanilla extract. Whisk until smooth.</li>
+                        <li>Add the dry ingredients to the wet ingredients, stirring until a soft dough forms.</li>
+                        <li>Fold in the white chocolate chips and semi-sweet chocolate chunks.</li>
+                        <li>Cover the dough and refrigerate for 30 minutes to enhance the texture and flavor.</li>
+                        <li>Preheat oven to 350 Fahrenheit (175 Celsius).</li>
+                        <li>Grease mini skillets or ramekins with butter or cooking spray to prevent sticking.</li>
+                        <li>Bake for 12-14 minutes, or until the edges are golden but the center remains slightly soft.</li>
+                        <li>Let the pizookies cool for a couple of minutes and serve.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 14 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Earl Grey Creme Brulee</center></h2>
+                    <img src="images/greycreme.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 cups of heavy cream</li>
+                        <li>2 Earl Grey tea bags</li>
+                        <li>4 egg yolks</li>
+                        <li>1/2 cup of sugar </li>
+                        <li>1 tablespoon vanilla extract</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat oven to 325 Fahrenheit.</li>
+                        <li>Heat the cream and Earl Grey tea bags in a pan until simmering and remove the tea bags.</li>
+                        <li>Slowly add warm cream while whisking the egg yolks and sugar.</li>
+                        <li>Add vanilla extract.</li>
+                        <li>Pour the mixture into a ceramic bowl and bake it in a water bath for 40-45 minutes.</li>
+                        <li>Chill the custards, sprinkle with sugar on top of the custard, and caramelize with a kitchen fire torch.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- recipe card 15 -->
+        <div class="card-flip">
+            <div class="inside-card-flip">
+                <div class="front-card-flip">
+                    <h2><center>Biscoff Truffles</center></h2>
+                    <img src="images/biscofftruffles.jpg" width="250" height="250">
+                </div>
+                <div class="back-card-flip">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup Biscoff spread</li>
+                        <li>2 cups of powdered sugar</li>
+                        <li>1/2 cup graham cracker crumbs</li>
+                        <li>1/2 teaspoon vanilla extract</li>
+                        <li>1 cup dark chocolate chips</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Mix Biscoff spread, powdered sugar, graham cracker crumbs, and vanilla extract until smooth.</li>
+                        <li>Roll the mixture into small balls and place on a baking sheet.</li>
+                        <li>Freeze for 15 minutes.</li>
+                        <li>Dip each ball into melted chocolate and place back on the baking sheet.</li>
+                        <li>Refrigerate until the chocolate is set and serve.</li> 
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="search.js"></script>
+<script src="recipe.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Chocolate Dessert Are You?</title>
+    <link rel="stylesheet" href="dd.styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dessert Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipeCards.html">Recipes</a></li>
+                <li><a href="#moodboard">Moodboard</a></li>
+                <li><a href="quizzeshomepage.html">Quizzes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <h1>What Chocolate Dessert Are You?</h1>
+        <p>Answer these questions to find your perfect chocolate match!</p>
+
+        <div id="chocoQuiz">
+
+            <div class="question" data-question="q1">
+                <p>1. How do you handle challenges?</p>
+                <div class="quiz-options">
+                    <button class="choco-choice" data-type="lavaCake">Stay calm and think logically</button>
+                    <button class="choco-choice" data-type="strawberryRoll">Go with the flow and adapt</button>
+                    <button class="choco-choice" data-type="raspberryMousse">Push through with determination</button>
+                    <button class="choco-choice" data-type="saltedCaramelCupcake">Seek advice and support</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q2">
+                <p>2. What’s your ideal Saturday?</p>
+                <div class="quiz-options">
+                    <button class="choco-choice" data-type="tiramisu">Relaxing with a book or movie</button>
+                    <button class="choco-choice" data-type="fudgeBrownie">Going out for an adventure</button>
+                    <button class="choco-choice" data-type="almondTruffles">Spending time with friends or family</button>
+                    <button class="choco-choice" data-type="mochaCheesecake">Trying something new and exciting</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q3">
+                <p>3. How would people describe your personality?</p>
+                <div class="quiz-options">
+                    <button class="choco-choice" data-type="lavaCake">Warm and welcoming</button>
+                    <button class="choco-choice" data-type="strawberryRoll">Elegant and charming</button>
+                    <button class="choco-choice" data-type="raspberryMousse">Bold and full of energy</button>
+                    <button class="choco-choice" data-type="saltedCaramelCupcake">Laid-back and fun-loving</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q4">
+                <p>4. If you could live anywhere, where would it be?</p>
+                <div class="quiz-options">
+                    <button class="choco-choice" data-type="tiramisu">A peaceful countryside cottage</button>
+                    <button class="choco-choice" data-type="fudgeBrownie">A stylish apartment in a big city</button>
+                    <button class="choco-choice" data-type="almondTruffles">A tropical beach house</button>
+                    <button class="choco-choice" data-type="mochaCheesecake">A cozy cabin in the mountains</button>
+                </div>
+            </div>
+
+            <div class="question" data-question="q5">
+                <p>5. What’s your approach to making decisions?</p>
+                <div class="quiz-options">
+                    <button class="choco-choice" data-type="lavaCake">Carefully analyze all options</button>
+                    <button class="choco-choice" data-type="strawberryRoll">Trust your instincts</button>
+                    <button class="choco-choice" data-type="raspberryMousse">Seek opinions before deciding</button>
+                    <button class="choco-choice" data-type="saltedCaramelCupcake">Act quickly and confidently</button>
+                </div>
+            </div>
+
+            <button id="chocoSubmit">Find My Chocolate Dessert</button>
+
+            <div id="chocoResult">
+                <h2>Your Chocolate Dessert Match:</h2>
+                <p id="chocoType"></p>
+                <p id="chocoDescription"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="chocolatedessert.js"></script>
+
+    <section class="quiz-links">
+        <h2>Take Another Quiz!</h2>
+        <a href="cakeflavor.html" class="quiz-button">What Flavor of Cake Are You?</a>
+        <a href="drinkdessert.html" class="quiz-button">What Dessert Pairs Best With Your Favorite Drink?</a>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Dessert Pairs Best With Your Favorite Drink?</title>
+    <link rel="stylesheet" href="dd.styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dessert Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipeCards.html">Recipes</a></li>
+                <li><a href="#moodboard">Moodboard</a></li>
+                <li><a href="quizzeshomepage.html">Quizzes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <h1>What Dessert Pairs Best With Your Favorite Drink?</h1>
+        <p>Choose your favorite drink, and we'll pair it with the perfect dessert!</p>
+
+        <div id="drinkQuiz">
+
+            <div class="question" data-question="q1">
+                <p>What is your favorite drink?</p>
+
+                <div class="quiz-options">
+                    <button class="drink-choice" data-type="coffee">Coffee</button>
+                    <button class="drink-choice" data-type="tea">Tea</button>
+                    <button class="drink-choice" data-type="milk">Milk</button>
+                    <button class="drink-choice" data-type="hotChocolate">Hot Chocolate</button>
+                    <button class="drink-choice" data-type="redWine">Red Wine</button>
+                    <button class="drink-choice" data-type="whiteWine">White Wine</button>
+                    <button class="drink-choice" data-type="fruitJuice">Fruit Juice</button>
+                    <button class="drink-choice" data-type="milkshake">Milkshake</button>
+                </div>
+            </div>
+
+            <button id="drinkSubmit">Find My Dessert Pairing</button>
+
+            <div id="drinkResult">
+                <h2>Your Perfect Dessert Pairing:</h2>
+                <p id="drinkDessert"></p>
+                <p id="drinkDessertDescription"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="drinkdessert.js"></script>
+
+    <section class="quiz-links">
+        <h2>Take Another Quiz!</h2>
+        <a href="cakeflavor.html" class="quiz-button">What Flavor of Cake Are You?</a>
+        <a href="chocolatedessert.html" class="quiz-button">What Chocolate Dessert Are You?</a>
+    </section>
+
+</body>
+</html>
