@@ -4,9 +4,16 @@ At Dessert Delights, we set out to create a platform that made discovering and c
 > [!NOTE]
 > Adding a new recipe will add it for everyone else who visits <3
 
+## Our Team
+This could not have been done without our team!
+- _Backend Team_: Nooreen, Mollie
+- _Frontend Team_: Adwitia, Marufa, Shuhena
+
+While we are on the topic, I would love to give Oliver his credit for helping me through multiple bugs  _- <3 Mollie_
+
 ## Running
 
-1. Clone the repository: `git clone https://github.com/xiBread/vite-express-demo.git`
+1. Clone the repository: `git clone https://github.com/mdishroon/dessertdelights.git`
 2. Ensure you have [Node.js](https://nodejs.org/en/download) downloaded. Installing Node will also install `npm`, the default package manager for Node. You can verify their installations by running the following commands:
 
     ```sh
