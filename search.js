@@ -4,7 +4,12 @@ function findRecipe(){
     const dessertCards = document.querySelectorAll('.card-flip');
 
     dessertCards.forEach(cardFlip => {
-        const specificDessert = cardFlip.querySelector('h2').innerText;
+        // debugging findRecipe function
+        const specificDessert = cardFlip.querySelector('h2').textContent.trim();
+        console.log("Search JS loaded");
+
+        //old variable, changed by mollie for testing
+        //const specificDessert = cardFlip.querySelector('h2').innerText;
         if (specificDessert.toUpperCase().includes(recipeFilter)) {
             cardFlip.style.display = '';
         } 
