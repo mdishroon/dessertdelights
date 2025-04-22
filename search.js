@@ -5,7 +5,8 @@ function findRecipe(){
 
     dessertCards.forEach(cardFlip => {
         // debugging findRecipe function
-        const specificDessert = cardFlip.querySelector('h2').textContent.trim();
+        const specificDessert = cardFlip.querySelector('.front-card-flip h2 center')?.innerText || '';
+        //const specificDessert = cardFlip.querySelector('h2').textContent.trim();
         console.log("Search JS loaded");
 
         //old variable, changed by mollie for testing
