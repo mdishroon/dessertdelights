@@ -1,9 +1,8 @@
-# Vite Express Demo
-
-There's a [live demo available](https://vite-express-demo.vercel.app/) that you can mess around with.
+# Welcome to Dessert Delights!
+At Dessert Delights, we set out to create a platform that made discovering and creating sweet treats fun, engaging, and effortless! Our overall goal was to create a unique and dynamic way to explore ones’ passion for desserts. We think we have done pretty well!
 
 > [!NOTE]
-> Adding a new recipe will add it for everyone else who visits (and I haven't implemented deletion), so try not to spam with filler data or add anything inappropriate ~~Mollie~~.
+> Adding a new recipe will add it for everyone else who visits <3
 
 ## Running
 
