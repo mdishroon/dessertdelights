@@ -17,7 +17,14 @@ import { neon } from "@neondatabase/serverless";
 // Uploading and storing images
 import { put } from "@vercel/blob";
 
+// Cross origin resource sharing, middleware that controls who can talk to the server
+import cors from "cors";
+
 const app = express();
+
+// Allows for requests from other origins (like frontend app) to access API
+app.use(cors());
+
 const router = express.Router();
 
 // Connect to the database
@@ -36,6 +43,22 @@ router.get("/desserts", async (req, res) => {
 	// Send the desserts back to the client as JSON
 	res.json(desserts);
 });
+
+// returns dessert table info
+app.get("/api/recipes", async (req, res) => {
+	try {
+	  const result = await sql`
+		SELECT id, name AS title, image_url, ingredients, instructions
+		FROM desserts
+		ORDER BY id DESC;
+	  `;
+	  res.json(result);
+	} catch (err) {
+	  console.error("Error fetching recipes:", err.message);
+	  res.status(500).json({ error: "Failed to fetch recipes" });
+	}
+  });
+
 
 /**
  * Corresponds to: POST /api/desserts
