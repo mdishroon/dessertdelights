@@ -27,21 +27,21 @@ const sql = neon(process.env.DATABASE_URL);
 app.use("/api", router);
 
 /**
- * Corresponds to: GET /api/recipes
- * Returns a list of all recipes in the database to be displayed on the homepage
+ * Corresponds to: GET /api/desserts
+ * Returns a list of all desserts in the database to be displayed on the homepage
  */
-router.get("/recipes", async (req, res) => {
-	const recipes = await sql`SELECT * FROM recipes`;
+router.get("/desserts", async (req, res) => {
+	const desserts = await sql`SELECT * FROM desserts`;
 
-	// Send the recipes back to the client as JSON
-	res.json(recipes);
+	// Send the desserts back to the client as JSON
+	res.json(desserts);
 });
 
 /**
- * Corresponds to: POST /api/recipes
- * Creates a new recipe in the database and redirects to the homepage
+ * Corresponds to: POST /api/desserts
+ * Creates a new dessert in the database and redirects to the homepage
  */
-router.post("/recipes", async (req, res) => {
+router.post("/desserts", async (req, res) => {
 	const form = formidable();
 	const [fields, files] = await form.parse(req);
 
@@ -61,9 +61,9 @@ router.post("/recipes", async (req, res) => {
 		access: "public",
 	});
 
-	// Insert the recipe into the database
+	// Insert the dessert into the database
 	await sql`
-		INSERT INTO recipes (name, description, image_url, ingredients, instructions)
+		INSERT INTO desserts (name, description, image_url, ingredients, instructions)
 		VALUES (${fields.name[0]}, ${fields.description[0]}, ${blob.url}, ${ingredients}, ${instructions})
 	`;
 
